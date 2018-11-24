@@ -3,7 +3,7 @@ Implementation of sentiment analysis with IMDB data
 contributed by <`williamchang`>
 
 #### 資料介紹
-- 資料來源：IMDb review data set from ACL 2011 paper
+- 資料來源：[IMDb review datasets from ACL 2011 paper](http://ai.stanford.edu/~amaas/data/sentiment/)
 - 動機：資源容易取得，且對於資料的前處理部分找到了不錯的方法進行篩選，因為資料特性，是文字的預測，對於比賽能有不錯的學習分類方式，因此，選取這個資料集當作我的資料集
 - 資料介紹：資料即是採用 IMDb 的電影網路資料集，是雅馬遜公司旗下的網站，在美國是最多人瀏覽的電影相關網站，已累積相當多的電影資料，經過整理過後，會分成正面的評比資料及負面的評比資料，且各為 25,000 個，分成訓練資料及測試資料（合計 100,000 筆資料）。
 - 方法概念：經由這些處理過的資料，呈現每個單字的出現次數，經由這些單字每個都給一個 token，建立成一個 hash table，並給每一個字的權重，使用 (Word embedding) 自然語言處理的方法，嘗試建立各種模型（如:MLP、RNN 和 LSTM），去預測準確度，這幾個方法在準確度方面相差不多，在建立模型當中，會介紹為何選取該模型進行建立，並把模型建立過程詳細介紹。也會藉由建立好的模型，對現行的資料進行預測（採用剛上映的電影：Ralph Breaks the Internet），分類預測正面及負面共兩種。
