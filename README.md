@@ -1,8 +1,12 @@
 # Data_mining_Project2
 Implementation of sentiment analysis with IMDB data
 contributed by <`williamchang`>
-
-#### 資料介紹
+#### 資料夾內容
+- IMDB_decision_tree.ipnb: Decision tree implementation (For homework, including data creation and decition tree)
+- IMDB_review.ipnb: Using ML method to recongnize data (For homework and Final representation)
+- README.md: This file represent
+- Untitled.ipnb: Test code for another target(Not for homework)
+### 資料介紹
 - 資料來源：[IMDb review datasets from ACL 2011 paper](http://ai.stanford.edu/~amaas/data/sentiment/)
 - 動機：資源容易取得，且對於資料的前處理部分找到了不錯的方法進行篩選，因為資料特性，是文字的預測，對於比賽能有不錯的學習分類方式，因此，選取這個資料集當作我的資料集
 - 資料介紹：資料即是採用 IMDb 的電影網路資料集，是雅馬遜公司旗下的網站，在美國是最多人瀏覽的電影相關網站，已累積相當多的電影資料，經過整理過後，會分成正面的評比資料及負面的評比資料，且各為 25,000 個，分成訓練資料及測試資料（合計 100,000 筆資料）。
